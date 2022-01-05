@@ -6,8 +6,10 @@ let retriever = new Worker(workers/retriever.js)
 const posts = postsData;
 const users = usersData;
 const elements = "placeholder";
+//document name
 const documentName = window.location.pathname.split("/").pop();
+//checks if document name is index.html (where the posts will be) to check whether or not to load the posts or not
 if (documentName == "index.html") {
-window.onload(retriever.postMessage([posts, users], elements));
+window.onload(retriever.postMessage(posts, users, elements));
 }
 
