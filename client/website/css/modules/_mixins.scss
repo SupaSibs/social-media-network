@@ -1,1 +1,19 @@
 //Mixins
+//Background mixin
+@mixin bg($color: default, $img: none, $imgpos: default, $imgsize: default,) {
+background-color: $color;
+background-image: $img;
+background-position: $imgpos;
+background-size: $imgsize;
+}
+@mixin flex($align: center, $justify: center, ) {
+display: flex;
+justify-content: $align;
+align-items: $justify;
+}
+@mixin grid($columns: auto, $rows: auto, $align: center, $justify: center) {
+display: grid;
+grid-template: $rows / $columns;
+align-items: $align;
+justify-content: $justify;
+}
