@@ -1,1 +1,1 @@
-Social media project me and someone else made
+Social media project by SupaSibs and UmutcanKara
