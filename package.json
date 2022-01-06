@@ -1,0 +1,30 @@
+{
+  "name": "social-media-network",
+  "version": "1.0.0",
+  "description": "Social Media Project by UmutcanKara & SupaSibs",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.6",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.5",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SupaSibs/social-media-network.git"
+  },
+  "author": "SupaSibs & UmutcanKara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SupaSibs/social-media-network/issues"
+  },
+  "homepage": "https://github.com/SupaSibs/social-media-network#readme"
+}
