@@ -8,4 +8,8 @@ nav {
 @include bg($Dark-blue);
 @include flex($justify: space-around);
 width: 100vw;
+
+a {
+appearance: button;
+}
 }
