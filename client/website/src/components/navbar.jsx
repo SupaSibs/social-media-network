@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function navbar() {
+export default function Navbar(props) {
 return (
 <div className="navbar">
  <span><a href="posts">Posts</a></span>
@@ -15,7 +15,7 @@ return (
 
  <span><a href="settings">Settings</a></span>  
 
- <span>Placeholder</span>      
+ <span><img src={props.image} alt="Profile"/></span>      
 </div>
 )
 }

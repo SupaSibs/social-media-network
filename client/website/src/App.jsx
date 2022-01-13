@@ -1,11 +1,16 @@
-import navbar from "./components/navbar";
+import React, {useState, useEffect} from "react"
+import Navbar from "./components/navbar";
+import Sidebar from "./components/Sidebar"
 import axios from "axios";
-export default class Posts {
-    constructor() {
-this.props = {
-signedUp: axios.get("/")
-.then(res => this.props.res = res)
-.catch(err => console.error(err)),
-}
+export default function Posts(props) {
+this.props = { signedUp: useEffect(() => axios.get("/api/auth"), [] ) }
+return(
+<div>
+<Navbar/>
+<Sidebar>
+</Sidebar>
+</div>
+)
+
     }
-}
+
