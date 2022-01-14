@@ -1,16 +1,33 @@
-import React, {useState, useEffect} from "react"
-import Navbar from "./components/navbar";
-import Sidebar from "./components/Sidebar"
+import ReactDOM from "react-dom"
+import React, {lazy, Suspense} from "react"
 import axios from "axios";
-export default function Posts(props) {
-this.props = { signedUp: useEffect(() => axios.get("/api/auth"), [] ) }
+const Sidebar = lazy(() => import("./components/Sidebar"))
+const Navbar= lazy(() => import("./components/Navbar"));
+
+export default class Posts extends React.Component {
+constructor(props) {
+    super(props);
+this.state = {
+    /* commented out for testing user: axios.get("/api/auth")
+    .then(res => this.state.user = res.user)
+    .catch(err => console.error(err)),
+    img: this.state.user.profile.img
+    */
+}
+}
+render() {
 return(
 <div>
-<Navbar/>
+<Navbar image={ this.state.img }/>
 <Sidebar>
+    <span className="filterBar">
+     
+    </span>
 </Sidebar>
+<Posts />
 </div>
 )
-
+}
     }
 
+ReactDOM.render(<Posts />, document.getElementById("root"));

@@ -1,6 +1,6 @@
 {
+  "homepage": ".",
   "proxy": "http://localhost:5000",
-  "homepage": "/",
   "dependencies": {
     "axios": "^0.24.0"
   }
