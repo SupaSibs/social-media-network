@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Navbar(props) {
 return (
-<div className="navbar">
+<nav className="navbar">
  <span><a href="posts">Posts</a></span>
 
  <span><a href="friends">Friends</a></span>  
@@ -16,6 +16,6 @@ return (
  <span><a href="settings">Settings</a></span>  
 
  <span><img src={props.image} alt="Profile"/></span>      
-</div>
+</nav>
 )
 }
