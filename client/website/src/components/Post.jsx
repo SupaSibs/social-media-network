@@ -13,23 +13,23 @@ export default class Post extends React.Component{
     
         render() {
             return(
-                <section className="postSection">
-                <span className="body">
-                {this.state.postData.textBody}
+              <section className="postSection">
+          <span className="body">
+            {/*        {this.state.postData.textBody} */}
                 </span>
                 <span className="actions">
                 <span>
-                <img className="like" src="/client/website/src/images/like" alt="" />
+            {/* <img className="like" src="/client/website/src/images/like" alt="" /> */}
                 Like
                 </span>
                 <span>
-                <img className="dislike" src="/client/website/src/images/dislike" alt=""/>
+                {/* <img className="dislike" src="/client/website/src/images/dislike" alt=""/> */}
                 Dislike
                 </span>
                 <select name="dropdown" className="dropdown">
-                <option value="happy"><img className="happy" src="/client/website/src/imges/happy"  alt=""/> Happy</option>
-                <option value="sad"><img className="sad" src="/client/website/src/imges/happy"  alt=""/> Sad</option>
-                <option value="angry"><img className="angry" src="/client/website/src/imges/happy"  alt=""/> Angry</option>
+                <option value="happy"> Happy</option>
+                <option value="sad"> Sad</option>
+                <option value="angry">Angry</option>
                 </select>
                 </span>
                 <span className="comment">

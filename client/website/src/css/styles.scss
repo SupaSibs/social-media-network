@@ -1,11 +1,43 @@
 @use "modules/_variables" as *;
 @use "modules/_mixins" as *;
+@use "sass:math" as math;
+
+
 main, body {
 height: 100vh;
-background-color: white;
+@include bg(white)
 }
+
 nav {
 @include bg($Dark-blue);
-@include flex($justify: space-around);
+@include flex($justify: flex-start);
+height: 7.5%;
 width: 100vw;
+padding: default 1rem;
+
+
+}
+
+span {
+    margin: default 15%;
+    
+    a {
+        color: white; 
+        text-decoration: none;
+        }
+    }
+aside {
+height: 90vh;
+width: 30vw;
+float: left;
+@include bg($Green);
+@include flex($justify: space-around);
+}
+
+.hamburger {
+float: left;
+position: absolute;
+top: 10%;
+height: 2rem;
+width: 2rem;
 }
