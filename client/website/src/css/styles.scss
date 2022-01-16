@@ -10,22 +10,19 @@ height: 100vh;
 
 nav {
 @include bg($Dark-blue);
-@include flex($justify: flex-start);
+@include flex($justify: space-around);
 height: 7.5%;
 width: 100vw;
 padding: default 1rem;
 
 
 }
-
-span {
-    margin: default 15%;
-    
-    a {
+a {
         color: white; 
         text-decoration: none;
-        }
     }
+
+
 aside {
 height: 90vh;
 width: 30vw;

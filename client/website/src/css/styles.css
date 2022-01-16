@@ -13,17 +13,14 @@ nav {
   background-size: default;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: space-around;
   flex-direction: row;
   height: 7.5%;
   width: 100vw;
   padding: default 1rem;
 }
 
-span {
-  margin: default 15%;
-}
-span a {
+a {
   color: white;
   text-decoration: none;
 }
