@@ -4,6 +4,8 @@
   "description": "Social Media Project by UmutcanKara & SupaSibs",
   "main": "server.js",
   "dependencies": {
+    "@redux-devtools/extension": "^3.1.0",
+    "axios": "^0.25.0",
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "config": "^3.3.6",
@@ -11,12 +13,22 @@
     "express-validator": "^6.14.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.5",
-    "request": "^2.88.2"
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.1",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
+    "request": "^2.88.2",
+    "uuid": "^8.3.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "client" : "npm start --prefix client",
+    "dev" : "concurrently \"npm run start\" \"npm run client\""
   },
   "repository": {
     "type": "git",
