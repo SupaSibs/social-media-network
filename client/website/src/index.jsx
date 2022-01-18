@@ -1,10 +1,12 @@
 import ReactDOM from "react-dom"
 import React, {lazy, Suspense} from "react"
 import axios from "axios";
-const Sidebar = lazy(() => import("./components/Sidebar"))
-const Navbar= lazy(() => import("./components/Navbar"));
+import Sidebar from "./components/Sidebar"
+import Navbar from "./components/Navbar"
+import Posts from "./components/Posts"
+import "./css/styles.css"
 
-export default class Posts extends React.Component {
+export default class PostsSite extends React.Component {
 constructor(props) {
     super(props);
 this.state = {
@@ -18,7 +20,7 @@ this.state = {
 render() {
 return(
 <div>
-<Navbar image={ this.state.img }/>
+<Navbar /* image={ this.state.img } *//>
 <Sidebar>
     <span className="filterBar">
      
@@ -30,4 +32,4 @@ return(
 }
     }
 
-ReactDOM.render(<Posts />, document.getElementById("root"));
+ReactDOM.render(<PostsSite />, document.getElementById("root"));

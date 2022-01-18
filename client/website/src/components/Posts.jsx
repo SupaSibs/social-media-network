@@ -1,5 +1,6 @@
 import React, {lazy, Suspense} from "react"
-const Post = lazy(() => import("./components/Post.jsx"))
+import Post from "./Post"
+
 export default function Posts(props) {
     return (
 <div className="posts">

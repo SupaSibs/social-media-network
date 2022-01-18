@@ -1,3 +1,50 @@
+main, body {
+  height: 100vh;
+  background-color: white;
+  background-image: none;
+  background-position: default;
+  background-size: default;
+}
 
+nav {
+  background-color: rgba(36, 143, 219, 0.95);
+  background-image: none;
+  background-position: default;
+  background-size: default;
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  flex-direction: row;
+  height: 7.5%;
+  width: 100vw;
+  padding: default 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+aside {
+  height: 90vh;
+  width: 30vw;
+  float: left;
+  background-color: rgba(36, 219, 112, 0.95);
+  background-image: none;
+  background-position: default;
+  background-size: default;
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  flex-direction: row;
+}
+
+.hamburger {
+  float: left;
+  position: absolute;
+  top: 10%;
+  height: 2rem;
+  width: 2rem;
+}
 
 /*# sourceMappingURL=styles.css.map */
