@@ -1,0 +1,32 @@
+@use "vars" as *;
+@use "functions" as function;
+
+
+@mixin flex($direction: row, $justify: center, $align: center) {
+display: flex;
+flex-direction: $direction;
+justify-content: $justify;
+align-items: $align;
+}
+
+@mixin gridEqual($items, $totalBase, $rows: 100%, $align: center, $justify: center) {
+    display: grid;
+    grid-template: $rows / function.divGrid($items, $totalBase);
+    align-content: $align;
+    justify-content: $justify;
+}
+
+@mixin gridInequal($items, $rows, $align: center, $justify: center) {
+    display: grid;
+    grid-template: $rows / $items;
+    align-content: $align;
+    justify-content: $justify;
+}
+
+@mixin bg($color, $image:default, $imgpos:default, $imgsize:default, $imgrepeat:no-repeat) {
+background-color: $color;
+background-image: $image;
+background-position: $imgpos;
+background-size: $imgsize;
+background-repeat: $imgrepeat;
+}

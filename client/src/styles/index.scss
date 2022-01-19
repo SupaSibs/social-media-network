@@ -1,0 +1,36 @@
+@use "functions" as function;
+@use "mixins" as mixin;
+@use "vars" as *;
+
+//universal styles for all elements
+* {
+color: black;
+font-family: Verdana, Tahoma, sans-serif;
+}
+
+//universal basic layout styles
+nav {
+width: 100vh;
+height: 5vh;
+@include mixin.bg($Dark-blue);
+@include mixin.flex($justify: space-around);
+
+input {
+@include mixin.bg(white, url(../images/search-magnifying.jpg), $imgpos: 5%);
+} }
+
+aside {
+width: 28vw;
+height: 95vh;
+@include mixin.bg($Green);
+@include mixin.flex($justify: space-around);
+}
+
+main {
+@include mixin.bg($Light-Blue);
+@include mixin.flex($justify: space-around);
+}
+
+section {
+@include mixin.bg(hsla(0, 0%, 100%, 0.80));
+}
