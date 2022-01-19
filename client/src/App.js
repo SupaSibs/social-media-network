@@ -24,6 +24,12 @@ function App() {
           </Routes>
           <section className="container">
             <Routes>
+             {/*UNDONE, needs to have seperate components which will be done later.
+              <Route exact path="/friends" element={<Friends />} />
+              <Route exact path="/dashboard" element={<Dashboard />} />
+              <Route exact path="/profile" element={<Profile />} />
+              <Route exact path="/settings" element={<Settings  />} />
+             */}
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/register" element={<Register />} />
             </Routes>
@@ -35,3 +41,4 @@ function App() {
 }
 
 export default App;
+
