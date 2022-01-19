@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+// import axios from "axios";
 
 //Components
 import Alert from "../layout/Alert";
@@ -27,6 +28,12 @@ const Register = () => {
       //   console.log("Passwords Do Not Match");
       setAlert("Passwords Do Not Match !", "danger");
     } else {
+      /* axios.post('/register', body: {
+      name: name,
+      email: email,
+      password: password,
+      password2: password2
+      }) */
       console.log("Register Success");
     }
   };

@@ -12,11 +12,17 @@ font-family: Verdana, Tahoma, sans-serif;
 
 //navbar style
 nav {
-width: 100vh;
+min-width: 100vh;
 height: 5vh;
 @include mixin.bg($Dark-blue);
 @include mixin.flex($justify: space-around);
 
+ul {
+list-style-type: none;
+    li {
+        display: block;
+    }
+}
 }
 
 .search {
@@ -32,7 +38,7 @@ height: 95vh;
 
 //styles for main content
 main {
-@include mixin.bg($Light-Blue);
+@include mixin.bg($Light-blue);
 @include mixin.flex($justify: space-around);
 
 //styles for posts content

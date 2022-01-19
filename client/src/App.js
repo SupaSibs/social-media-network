@@ -11,7 +11,7 @@ import Landing from "./components/layout/Landing";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 
-import "./index.css";
+import "./styles/index.css";
 
 function App() {
   return (
