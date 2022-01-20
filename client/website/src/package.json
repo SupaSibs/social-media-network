@@ -1,7 +1,0 @@
-{
-  "homepage": ".",
-  "proxy": "http://localhost:5000",
-  "dependencies": {
-    "axios": "^0.24.0"
-  }
-}
