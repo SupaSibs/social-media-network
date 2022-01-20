@@ -1,0 +1,9 @@
+@use "sass:math";
+
+@function pxToRem($px) {
+@return $px * 16 + rem;
+}
+
+@function divGrid($items, $totalBase) {
+    @return percentage($items, $totalBase);
+}

@@ -1,0 +1,53 @@
+@use "./modules/functions" as function;
+@use "./modules/mixins" as mixin;
+@use "./modules/vars" as *;
+
+//universal styles for all elements
+* {
+color: black;
+font-family: Verdana, Tahoma, sans-serif;
+}
+
+//universal basic layout styles
+
+//navbar style
+nav {
+min-width: 100vh;
+height: 5vh;
+@include mixin.bg($Dark-blue);
+@include mixin.flex($justify: space-around);
+
+ul {
+list-style-type: none;
+    li {
+        display: block;
+    }
+}
+}
+
+.search {
+    @include mixin.bg(white, url(../images/search-magnifying.jpg), $imgpos: 5%);
+    } 
+//styles for filters
+aside {
+width: 28vw;
+height: 95vh;
+@include mixin.bg($Green);
+@include mixin.flex($justify: space-around);
+}
+
+//styles for main content
+main {
+@include mixin.bg($Light-blue);
+@include mixin.flex($justify: space-around);
+
+//styles for posts content
+section {
+@include mixin.bg(hsla(0, 0%, 100%, 0.80));
+} }
+
+//styles for badge content
+.badge {
+    border-radius: 50%;
+}
+
