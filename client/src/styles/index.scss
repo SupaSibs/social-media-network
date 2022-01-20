@@ -2,6 +2,9 @@
 @use "./modules/mixins" as mixin;
 @use "./modules/vars" as *;
 
+body, .root {
+min-height: 100vh;
+}
 //universal styles for all elements
 * {
 color: black;
@@ -13,7 +16,7 @@ font-family: Verdana, Tahoma, sans-serif;
 //navbar style
 nav {
 min-width: 100vh;
-height: 5vh;
+min-height: 5vh;
 @include mixin.bg($Dark-blue);
 @include mixin.flex($justify: space-around);
 
@@ -40,11 +43,11 @@ height: 95vh;
 main {
 @include mixin.bg($Light-blue);
 @include mixin.flex($justify: space-around);
-
+}
 //styles for posts content
 section {
 @include mixin.bg(hsla(0, 0%, 100%, 0.80));
-} }
+} 
 
 //styles for badge content
 .badge {

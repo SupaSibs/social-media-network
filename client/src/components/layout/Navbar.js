@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import axios from "axios"
 const Navbar = props => {
-  // If logged in
+	// If logged in
   //NOT YET IMPLEMENTED, JUST A TEST
   /*
   return this.props.loggedIn === true ? (
