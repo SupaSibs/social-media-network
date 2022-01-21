@@ -1,5 +1,5 @@
-@use "./modules/functions" as function;
-@use "./modules/mixins" as mixin;
+@use "./modules/functions" as fun;
+@use "./modules/mixins" as mix;
 @use "./modules/vars" as *;
 
 body, .root {
@@ -16,41 +16,59 @@ font-family: Verdana, Tahoma, sans-serif;
 //navbar style
 nav {
 min-width: 100vh;
-min-height: 5vh;
-@include mixin.bg($Dark-blue);
-@include mixin.flex($justify: space-around);
-
+height: 5vh;
+@include mix.bg($Dark-blue);
+@include mix.flex($justify: space-around);
 ul {
+    display: inline;
 list-style-type: none;
     li {
-        display: block;
+        display: inline-block;
+        margin: default 15px;
     }
 }
 }
 
 .search {
-    @include mixin.bg(white, url(../images/search-magnifying.jpg), $imgpos: 5%);
+    @include mix.bg(white, url(../images/search-magnifying.jpg), $imgpos: 5%);
     } 
 //styles for filters
 aside {
 width: 28vw;
 height: 95vh;
-@include mixin.bg($Green);
-@include mixin.flex($justify: space-around);
+@include mix.bg($Green);
+@include mix.flex($justify: space-around);
 }
 
 //styles for main content
 main {
-@include mixin.bg($Light-blue);
-@include mixin.flex($justify: space-around);
+min-height: 95vh;
+min-width: 72vw;
+position: absolute;
+right: 0.175%;
+top: 6.3%;
+@include mix.bg($Light-blue);
+@include mix.flex($justify: space-around);
 }
 //styles for posts content
 section {
-@include mixin.bg(hsla(0, 0%, 100%, 0.80));
+@include mix.bg(hsla(0, 0%, 100%, 0.80));
 } 
-
 //styles for badge content
 .badge {
     border-radius: 50%;
 }
+.hamburger {
+    position: absolute;
+    top: 7.5%;
+    height: 30px;
+    width: 30px;   
+}
 
+
+@media screen and (max-width : 480px) {
+    aside {
+        display: none;
+        width: 100vw;
+    }
+}

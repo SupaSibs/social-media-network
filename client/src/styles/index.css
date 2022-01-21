@@ -1,10 +1,14 @@
+body, .root {
+  min-height: 100vh;
+}
+
 * {
   color: black;
   font-family: Verdana, Tahoma, sans-serif;
 }
 
 nav {
-  width: 100vh;
+  min-width: 100vh;
   height: 5vh;
   background-color: #2490DB;
   background-image: default;
@@ -15,6 +19,14 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+nav ul {
+  display: inline;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin: default 15px;
 }
 
 .search {
@@ -40,6 +52,11 @@ aside {
 }
 
 main {
+  min-height: 95vh;
+  min-width: 72vw;
+  position: absolute;
+  right: 0.175%;
+  top: 6.3%;
   background-color: #24DBCA;
   background-image: default;
   background-position: default;
@@ -50,7 +67,8 @@ main {
   justify-content: space-around;
   align-items: center;
 }
-main section {
+
+section {
   background-color: rgba(255, 255, 255, 0.8);
   background-image: default;
   background-position: default;
@@ -60,6 +78,20 @@ main section {
 
 .badge {
   border-radius: 50%;
+}
+
+.hamburger {
+  position: absolute;
+  top: 7.5%;
+  height: 30px;
+  width: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  aside {
+    display: none;
+    width: 100vw;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
