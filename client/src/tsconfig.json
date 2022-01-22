@@ -1,0 +1,25 @@
+{
+    "include": [
+        "./components/auth",
+         "./components/layout",
+        ],
+    "compilerOptions": {
+        "target": "ES2015",
+        "jsx": "react-jsx",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+    },
+
+    "files": [
+        "App.tsx",
+        "index.tsx",
+        "store.tsx",
+        "reportWebVitals.tsx",
+        "components/layout/Landing.tsx",
+        "components/layout/Main.tsx",
+        "components/layout/Navbar.tsx",
+        "components/layout/Sidebar.tsx",
+        "components/auth/Login.tsx",
+        "components/auth/Register.tsx",
+          ],
+}
