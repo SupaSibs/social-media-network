@@ -47,6 +47,7 @@ min-width: 72vw;
 position: absolute;
 right: 0.175%;
 top: 6.3%;
+z-index: -10;
 @include mix.bg($Light-blue);
 @include mix.flex($justify: space-around);
 }
@@ -62,7 +63,8 @@ section {
     position: absolute;
     top: 7.5%;
     height: 30px;
-    width: 30px;   
+    width: 30px; 
+    z-index: 1000000000;  
 }
 
 

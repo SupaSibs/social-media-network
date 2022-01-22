@@ -14,7 +14,7 @@ return (
 }
 
 function openMenu() {
-    document.getElementById("aside").style.display = document.getElementById("aside").style.display === "none" ? "inline" : "none"
-    document.getElementById("main").style.width = document.getElementById("aside").style.display === "none" ? "72vw" : "72vw"
+    document.getElementById("aside").style.display = document.getElementById("aside").style.display === "flex" ? "none" : "flex"
+    document.getElementById("main").style.width = document.getElementById("aside").style.display === "none" ? "98vw" : "72vw"
 }
 
