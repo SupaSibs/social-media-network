@@ -31,6 +31,6 @@ const Navbar = props => {
     ) : bottom code for if not logged in
     */
     // If not Logged in
-    return (_jsxs("nav", Object.assign({ className: "navbar" }, { children: [_jsx("h1", { children: _jsx(Link, Object.assign({ to: "/" }, { children: "Social Website" }), void 0) }, void 0), _jsxs("ul", { children: [_jsx("li", { children: _jsx(Link, Object.assign({ to: "/register" }, { children: "Register" }), void 0) }, void 0), _jsx("li", { children: _jsx(Link, Object.assign({ to: "/login" }, { children: "Login" }), void 0) }, void 0)] }, void 0)] }), void 0));
+    return (_jsx("nav", Object.assign({ className: "navbar" }, { children: _jsxs("ul", { children: [_jsx("li", Object.assign({ className: "li" }, { children: _jsx(Link, Object.assign({ to: "/" }, { children: "Social Website" }), void 0) }), void 0), _jsx("li", Object.assign({ className: "li" }, { children: _jsx(Link, Object.assign({ to: "/register" }, { children: "Register" }), void 0) }), void 0), _jsx("li", Object.assign({ className: "li" }, { children: _jsx(Link, Object.assign({ to: "/login" }, { children: "Login" }), void 0) }), void 0)] }, void 0) }), void 0));
 };
 export default Navbar;

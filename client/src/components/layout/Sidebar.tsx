@@ -1,11 +1,11 @@
 import React, {Fragment} from "react"
-const hamburger = require("../../images/hamburger.svg") as string;
+const hamburgerURL = require("./../../images/hamburger.svg") as string;
 
 //function comp
 export default function Sidebar(props) {
 return (
 <Fragment>
-<img src={hamburger} onClick={openMenu} alt="Open menu" className="hamburger" />
+<img src={hamburgerURL} onClick={openMenu} alt="Open menu" className="hamburger" />
 <aside id="aside">
 
 </aside>

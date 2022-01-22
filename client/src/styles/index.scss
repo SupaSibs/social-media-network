@@ -2,6 +2,9 @@
 @use "./modules/mixins" as mix;
 @use "./modules/vars" as *;
 
+a {
+    text-decoration: none;
+}
 body, .root {
 min-height: 100vh;
 }
@@ -18,13 +21,13 @@ nav {
 min-width: 100vh;
 height: 5vh;
 @include mix.bg($Dark-blue);
-@include mix.flex($justify: space-around);
+@include mix.flex($justify: flex-start);
 ul {
     display: inline;
 list-style-type: none;
     li {
         display: inline-block;
-        margin: default 15px;
+        margin: 40px;
     }
 }
 }

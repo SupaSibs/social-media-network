@@ -36,17 +36,17 @@ const Navbar = props => {
   // If not Logged in
   return (
     <nav className="navbar">
-      <h1>
-        <Link to="/">Social Website</Link>
-      </h1>
       <ul>
-        <li>
+      <li className="li">
+        <Link to="/">Social Website</Link>
+      </li>
+        <li className="li">
           <Link to="/register">Register</Link>
         </li>
-        <li>
+        <li className="li">
           <Link to="/login">Login</Link>
         </li>
-       
+      
       </ul>
     </nav>
   );
